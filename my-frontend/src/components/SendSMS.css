@@ -1,0 +1,95 @@
+/* SendSMS.css */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4c3, #f9a825);
+  font-family: 'Poppins', sans-serif;
+}
+
+.sms-form {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sms-form h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #333;
+  font-weight: 600;
+}
+
+.input, .textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus, .textarea:focus {
+  border-color: #f9a825;
+  outline: none;
+}
+
+.textarea {
+  resize: none;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  background-color: #f9a825;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:disabled {
+  background-color: #e0e0e0;
+  cursor: not-allowed;
+}
+
+.button:hover:not(:disabled) {
+  background-color: #d18b00;
+}
+
+.status {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.success {
+  color: #43a047;
+}
+
+.error {
+  color: #e53935;
+}
